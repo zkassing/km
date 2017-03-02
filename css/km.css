@@ -14,9 +14,9 @@ body{
     height: .88rem;
     background: #ffa03a;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 0 .3rem;
+    /*padding: 0 .3rem;*/
 }
 .box .logo{
     width: 1.39rem;
@@ -28,7 +28,7 @@ body{
 }
 
 .box header .search{
-
+    flex-shrink: 2;
 
 }
 .box header .search input{
@@ -46,6 +46,7 @@ body{
 .box header .city{
     font-size: .28rem;
     color: #fff;
+    flex-shrink: 0;
 }
 .box .banner{
     position: relative;
@@ -120,4 +121,30 @@ body{
 }
 .box .fication .fication-body>span:last-child{
     font-size: .22rem;
+}
+
+
+
+.box .menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1rem;
+    background: #f6f6f6;
+}
+.box .menu>a{
+    display: flex;
+    width: .88rem;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: .82rem;
+    font-size: .22rem;
+}
+.box .menu .nav-icon{
+    font-size: .4rem;
 }
