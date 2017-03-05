@@ -6,7 +6,7 @@ body{
     max-width: 10rem;
     font-size: .24rem;
     margin: 0 auto;
-    background: #f6f6f6;
+
 }
 
 
@@ -160,34 +160,37 @@ body{
     height:.54rem;
     background-size: .6rem .54rem!important;
 }
+.box .menu .active{
+    color: #fc6733;
+}
 .box .menu .home{
     background: url("../img/icon/home.png");
 }
-.box .menu .home.active{
+.box .menu .active .home{
     background: url("../img/icon/homeact.png");
 }
 .box .menu .item{
     background: url("../img/icon/order.png");
 }
-.box .menu .item.active{
+.box .menu .active .item{
     background: url("../img/icon/orderact.png");
 }
 .box .menu .favo{
     background: url("../img/icon/star.png");
 }
-.box .menu .favo.active{
+.box .menu .active .favo{
     background: url("../img/icon/staract.png");
 }
 .box .menu .car{
     background: url("../img/icon/shopping.png");
 }
-.box .menu .car.active{
+.box .menu .active .car{
     background: url("../img/icon/shoppingact.png");
 }
 .box .menu .user{
     background: url("../img/icon/personal.png");
 }
-.box .menu .user.active{
+.box .menu .active .user{
     background: url("../img/icon/personalact.png");
 }
 
@@ -288,9 +291,58 @@ article{
 
 
 /*通知中心*/
+.box .back {
+    background: url("../img/icon/back.png") no-repeat center;
+    width: .4rem;
+    height: .88rem;
+    background-size: .24rem .4rem;
+    position: absolute;
+    left:  .3rem;
+    top:0;
+}
+.notice-title{
+    font-size: .36rem;
+    color: #fff;
+}
 .notice{
 
 }
 .notice .item{
-
+    display: flex;
+    padding: .25rem .46rem;
+    background: #fff;
+    margin-bottom: .12rem;
+    justify-content:flex-start;
+}
+.notice .item img{
+    width: 1.96rem;
+    height:1.85rem;
+    flex-shrink:0;
+    margin-right: .3rem;
+}
+.notice .item .item-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: .13rem 0;
+}
+.notice .item .item-body-title{
+    font-size: .28rem;
+    color: #686868;
+}
+.notice .item .item-body-time{
+    font-size: .24rem;
+    color: #9b9b9b;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.notice .item .item-body-time .icon{
+    background: url("../img/icon/time.png");
+    background-size: .24rem;
+    width: .24rem;
+    height: .24rem;
+    flex-shrink: 0;
+    margin-right: .16rem;
 }
