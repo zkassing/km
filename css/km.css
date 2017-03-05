@@ -18,6 +18,11 @@ body{
     align-items: center;
     /*padding: 0 .3rem;*/
     flex:auto;
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index:1;
 }
 .box .logo{
     width: 1.39rem;
@@ -133,7 +138,7 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
@@ -190,7 +195,7 @@ body{
 .box .news{
     height: .75rem;
     background: #fff;
-    margin: .13rem 0;
+    margin-top: .13rem;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -227,6 +232,7 @@ body{
     flex-shrink: 0;
     border-radius: .08rem;
     margin-right:.12rem;
+    color: #ed5564;
 }
 .box .news-body{
     width:65%;
@@ -239,24 +245,52 @@ body{
     white-space: nowrap;
 }
 .box .goods {
-
+    margin-top: .13rem;
 }
 .box .goods-title{
-    border: 1px solid #eaeaea;
-    font-size: .26rem;
+    border: 1px solid #eaeaea ;
+    border-left:none;
+    nprder-right:none;
+    font-size: .28rem;
     text-align: center;
     height: .58rem;
     background: #fff;
-    line-height:.58rem;
     color: #fb953b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box .goods-title .icon{
+    width: .27rem;
+    height: .27rem;
+    margin-right:.09rem;
+    background-size: .27rem .27rem;
 }
 .box .goods .goods-list{
     display: flex;
-    height: 1.55rem;
     background: #fff;
     flex-wrap: wrap;
 }
 .box .goods .goods-list .goods-item{
-    width:100%;
+    /*border:solid 1px #eaeaea;*/
+
+}
+.box .good1 .icon{
+    background-image: url("../img/icon/icon2.png");
+}
+.box .good2 .icon{
+    background-image: url("../img/icon/icon.png");
+}
+article{
+    margin: .88rem 0;
+}
+
+
+
+/*通知中心*/
+.notice{
+
+}
+.notice .item{
 
 }

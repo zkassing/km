@@ -56,3 +56,65 @@ input:-ms-input-placeholder{
 input::-webkit-input-placeholder{
     color: #fff;opacity:1;
 }
+/*flex栅格*/
+.grid { display: flex; }
+.grid-cell { flex:1 }
+.grid-cell.col-1 { flex: 0 0 8.33333%; }
+.grid-cell.col-2 { flex: 0 0 16.66667%; }
+.grid-cell.col-3 { flex: 0 0 25%; }
+.grid-cell.col-4 { flex: 0 0 33.33333%; }
+.grid-cell.col-5 { flex: 0 0 41.66667%; }
+.grid-cell.col-6 { flex: 0 0 50%; }
+.grid-cell.col-7 { flex: 0 0 58.33333%;}
+.grid-cell.col-8 { flex: 0 0 66.66667%;}
+.grid-cell.col-9 { flex: 0 0 75%;}
+.grid-cell.col-10{ flex: 0 0 83.33333%;}
+.grid-cell.col-11{ flex: 0 0 91.66667%;}
+.grid-cell.col-12{ flex: 0 0 100%;}
+.grid.grid-top      { align-items: flex-start; }
+.grid.grid-middle   { align-items: center; }
+.grid.grid-bottom   { align-items: flex-end; }
+.grid.grid-stretch  { align-items: stretch; }
+.grid.grid-baseline { align-items: baseline; }
+.grid.grid-left     { justify-content: flex-start; }
+.grid.grid-center   { justify-content: center; }
+.grid.grid-right    { justify-content: flex-end; }
+.grid.grid-between  { justify-content: space-between; }
+.grid.grid-around   { justify-content: space-around; }
+
+.bor-r,.bor-b,.bor-t{
+     position: relative;
+ }
+.bor-r::after{
+    content:"";
+    height: 100%;
+    width:1px;
+    border-right:1px solid #eaeaea;
+    position: absolute;
+    top:0;
+    right:0;
+    transform: scaleX(.5);
+    z-index:2;
+}
+.bor-b::after{
+    content:"";
+    height: 1px;
+    width: 100%;
+    border-top:1px solid #eaeaea;
+    position: absolute;
+    bottom:0;
+    left:0;
+    transform: scaleY(.5);
+    z-index:2;
+}
+.bor-t::after{
+    content:"";
+    height: 1px;
+    width: 100%;
+    border-top:1px solid #eaeaea;
+    position: absolute;
+    top:0;
+    left:0;
+    transform: scaleY(.5);
+    z-index:2;
+}
