@@ -6,7 +6,7 @@ body{
     max-width: 10rem;
     font-size: .24rem;
     margin: 0 auto;
-
+    height:100%;
 }
 
 
@@ -22,7 +22,8 @@ body{
     top:0;
     left:0;
     right:0;
-    z-index:1;
+    z-index:10;
+
 }
 .box .logo{
     width: 1.39rem;
@@ -143,7 +144,9 @@ body{
     left: 0;
     right: 0;
     height: 1rem;
-    background: #f6f6f6;
+    /*background: #f6f6f6;*/
+    background: #fff;
+    z-index:10;
 }
 .box .menu>a{
     display: flex;
@@ -331,18 +334,295 @@ article{
     font-size: .28rem;
     color: #686868;
 }
-.notice .item .item-body-time{
+.icon-body{
     font-size: .24rem;
     color: #9b9b9b;
     display: flex;
     justify-content:space-between;
     align-items: center;
 }
-.notice .item .item-body-time .icon{
-    background: url("../img/icon/time.png");
-    background-size: .24rem;
+.icon-body .icon{
+    background-size: .24rem!important;
     width: .24rem;
     height: .24rem;
     flex-shrink: 0;
     margin-right: .16rem;
 }
+.notice .item .item-body-time .icon{
+    background: url("../img/icon/time.png") no-repeat;
+
+}
+
+/*通知内容*/
+.notice-content{
+    padding: .3rem;
+    background-color: #fff;
+
+}
+.notice-content h2{
+    color: #323232;
+    font-size: .36rem;
+}
+.notice-content .notice-info{
+    display: flex;
+    justify-content: space-between;
+    margin-top: .24rem;
+    margin-bottom: .62rem;
+
+}
+.notice-content .notice-info .notice-info-author .icon{
+    background: url("../img/icon/person.png") no-repeat;
+}
+.notice-content .notice-info .notice-info-time .icon{
+    background: url("../img/icon/time.png") no-repeat;
+}
+.paragraph h4{
+    font-size: .26rem;
+    font-weight:bolder;
+    margin: .2rem 0;
+}
+.paragraph .content{
+    text-indent: 2em!important;
+    font-size: .26rem;
+    font-weight:normal;
+    color: #5e5c5c;
+}
+
+
+/*收藏夹*/
+.favorite{
+
+}
+
+.list .item{
+    padding: .25rem .46rem;
+    display: flex;
+    background: #fff;
+    margin-bottom: .1rem;
+}
+.list .item img{
+    margin-right: .3rem;
+    flex-shrink: 0;
+    border: solid 1px #e3e3e3;
+    width: 1.96rem;
+    height: 1.85rem;
+}
+.list .item .item-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width:100%;
+
+}
+.list .item .item-body h4{
+    font-size: .26rem;
+}
+.list .item .item-body .sku{
+    color: #9b9b9b;
+    margin-top: .1rem;
+}
+.list .item .item-body .price{
+    font-size: .4rem;
+    color: #fc6733;
+    padding:.1rem 0;
+}
+.list .item .item-body .price i{
+    font-size: .22rem;
+    font-style: normal;
+    color: #fc6733;
+}
+.list .item .item-body .price .price-del{
+    font-size: .2rem;
+    color: #c3c3c3;
+    text-decoration: line-through;
+    margin-left: .18rem;
+}
+.list .item .item-body .item-ctrl{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width:100%;
+
+}
+.buy{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.buy .count{
+    font-size: .38rem;
+    color: #fc6733;
+    margin:0 .13rem;
+}
+.buy i{
+    width: .45rem;
+    height: .45rem;
+    background-size: .45rem!important;
+
+}
+.buy .add{
+    background: url(../img/icon/plus.png);
+}
+.buy .minus{
+    background: url(../img/icon/minus.png);
+
+}
+.buy .del{
+    background: url(../img/icon/delt.png);
+    margin-left: .25rem;
+}
+.classifys{
+    height:100%;
+    padding: .88rem 0 1rem 0;
+    margin:0;
+    /*display: flex;*/
+    justify-content: space-between;
+
+}
+.classify{
+    height:100%;
+    width: 2.4rem;
+    background: #fff;
+    flex-shrink: 0;
+    overflow: scroll;
+}
+.classify li{
+    margin-right: .1rem;
+    height: 1.02rem;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-size: .28rem;
+    border-bottom:1px solid #ededed;
+
+}
+.classify li.active{
+    background: #fc6733;
+    color: #fff;
+}
+
+.classify .icon{
+    width: .34rem;
+    height: .34rem;
+    background:url("../img/icon/icons.png") no-repeat center;
+    background-size: .34rem !important;
+    margin-right:.1rem;
+
+}
+.classify .icon1{
+    background-position-y: .03rem;
+}
+.classify .icon2{
+    background-position-y: -.97rem;
+}
+.classify .icon3{
+    background-position-y: -1.99rem;
+}
+.classify .icon4{
+    background-position-y: -3rem;
+}
+.classify .icon5{
+    background-position-y: -4.04rem;
+}
+.classify .icon6{
+    background-position-y: -5.02rem;
+}
+.classify .icon7{
+    background-position-y: -6.04rem;
+}
+.classify .icon8{
+    background-position-y: -7.04rem;
+}
+.classify .icon9{
+    background-position-y: -8.08rem;
+}
+.classify .icon10{
+    background-position-y: -9.08rem;
+}
+.classify .icon11{
+    background-position-y: -10.1rem;
+}
+.classifys .list{
+    width: 100%;
+    overflow-y: scroll;
+}
+.classifys .list .item{
+    padding: .24rem .3rem .24rem 0;
+}
+.classifys .list .item img{
+    margin-right: .1rem;
+}
+.classifys .list .item .item-body .item-ctrl{
+    flex-direction: column;
+    align-items: flex-start;
+}
+.classifys .list .item .item-body .buy{
+    align-self: flex-end;
+}
+
+.mask{
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background: rgba(0,0,0,.37);
+    z-index:100;
+
+}
+.mask .mask-item{
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-top: -3.46rem;
+    margin-left: -3.21rem;
+    width: 6.42rem;
+    background:#fff;
+    border-radius: .09rem;
+}
+.mask .list{
+    padding: .3rem;
+}
+.mask .list .item{
+    margin: 0;
+    padding: .2rem .1rem;
+    border-bottom: 1px solid #f0f0f0;
+}
+.mask .type{
+    padding: .15rem;
+    border-bottom: 1px solid #f0f0f0;
+
+}
+.mask .type .type-class{
+    font-size: .22rem;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: .15rem;
+}
+.mask .type .cls{
+    padding: .1rem .2rem;
+    margin-right: .3rem;
+    background: #e6e6e6;
+    border-radius: .09rem;
+}
+.mask .type .cls.active{
+    color: #fff;
+    background:#fc6733;
+}
+.mask .buy{
+    justify-content: flex-end;
+}
+.type:last-child{
+    border:none;
+    margin-bottom: .3rem;
+}
+.btn{
+    border:none;
+    background:#fc6733;
+    width: 100%;
+    color: #fff;
+    border-radius: .09rem;
+    padding: .2rem;
+    font-size: .34rem;
+}
+

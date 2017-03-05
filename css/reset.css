@@ -15,6 +15,9 @@ input:focus{
 html{
     background: #f6f6f6;
 }
+html,body{
+    height:100%;
+}
 
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
     border: 0 none;
@@ -121,3 +124,9 @@ input::-webkit-input-placeholder{
     transform: scaleY(.5);
     z-index:2;
 }
+
+/*@media (max-width: 720px) {*/
+    /*html{*/
+        /*font-size: 80px!important;*/
+    /*}*/
+/*}*/
