@@ -553,6 +553,12 @@ article{
     width:100%;
 
 }
+.active.buy .minus{
+    display: block;
+}
+.active.buy .count{
+    display: block;
+}
 .buy{
     display: -webkit-box;
     display: -ms-flexbox;
@@ -565,6 +571,7 @@ article{
             align-items: center;
 }
 .buy .count{
+    display: none;
     font-size: .38rem;
     color: #fc6733;
     margin:0 .13rem;
@@ -579,6 +586,7 @@ article{
     background: url(../img/icon/plus.png);
 }
 .buy .minus{
+    display: none;
     background: url(../img/icon/minus.png);
 
 }

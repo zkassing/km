@@ -36,7 +36,7 @@
             <li><i class="icon icon10"></i>鲜活水产</li>
             <li><i class="icon icon11"></i>腌制菜类</li>
         </ul>
-        <ul class="list grid-cell col-9">
+        <ul class="list grid-cell col-9" id="list">
             <li class="item">
                 <img src="img/favorite/markpic1.png" alt="">
                 <div class="item-body">
@@ -67,7 +67,6 @@
                             <i class="minus"></i>
                             <span class="count">1</span>
                             <i class="add"></i>
-
                         </div>
                     </div>
 
@@ -284,6 +283,11 @@
         </div>
     </div>
 </div>
-
+<script src="js/select.js"></script>
+<script>
+    (function(){
+        var sel = new Select('list');
+    }())
+</script>
 </body>
 </html>
