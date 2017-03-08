@@ -47,6 +47,7 @@ body{
     /*flex-grow: 2;*/
 
     width:60%;
+    position: relative;
 }
 .box header .search input{
     padding: 0 .2rem;
@@ -56,6 +57,16 @@ body{
     font-size: .24rem;
     border:none;
     border-radius: .08rem;
+}
+.box header .search .search-icon{
+    position: absolute;
+    display: block;
+    width: .32rem;
+    height: .32rem;
+    top: .1rem;
+    right: .2rem;
+    background: url('../img/icon/search.png') no-repeat;
+    background-size: .32rem;
 }
 .box header .search input:-webkit-placeholder{
     color: #fff;
@@ -201,6 +212,7 @@ body{
             align-items: center;
     height: 1rem;
     font-size: .22rem;
+    position: relative;
 }
 .box .menu .nav-icon{
     width:.6rem;
@@ -241,6 +253,21 @@ body{
     background: url("../img/icon/personalact.png");
 }
 
+.box .menu .label{
+    display: block;
+    position: absolute;
+    width: .26rem;
+    height: .26rem;
+    border-radius: 50%;
+    background: red;
+    color: #fff;
+    font-size: .22rem;
+    line-height: .26rem;
+    top: .08rem;
+    right: .34rem;
+    font-style: normal;
+    text-align: center;
+}
 
 .box .news{
     height: .75rem;
@@ -301,6 +328,8 @@ body{
 }
 .box .news-body{
     width:65%;
+    overflow: hidden;
+    height: .3rem;
 }
 .box .news-body .content{
     display: block;
@@ -308,6 +337,7 @@ body{
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    /*margin-bottom: .1rem;*/
 }
 .box .goods {
     margin-top: .13rem;
@@ -706,7 +736,9 @@ article{
     bottom:0;
     background: rgba(0,0,0,.37);
     z-index:100;
-
+    transition: all .5s linear;
+    display: none;
+    opacity: 0;
 }
 .mask .mask-item{
     position: absolute;

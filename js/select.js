@@ -1,11 +1,10 @@
 ;(function(win,doc){
     function Select(id){
-        this.obj = document.getElementById(id);
+        this.obj = doc.getElementById(id);
         this.init();
     }   
     Select.prototype = {
         init:function(){
-            console.log(this.obj)
             this.obj.addEventListener('touchend',function(e){   
                 var e = e||window.event;
                 switch(e.target.className){
@@ -21,6 +20,7 @@
                         break;
                     case "add":
                         var count = e.target.previousElementSibling;
+                        console.log(e.target.parentNode)
                         if(count.innerText==0){
                             e.target.parentNode.className = "buy active";
                             count.innerText = ++count.innerText;
